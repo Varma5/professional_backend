@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon --watch src --exec node src/index.js"
+    "start": "nodemon -r dotenv/config --exprimental-json-modules index.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +12,10 @@
   "devDependencies": {
     "nodemon": "^3.1.10",
     "prettier": "^3.5.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.15.1"
   }
 }
